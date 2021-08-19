@@ -7,12 +7,9 @@
   },
   "extends": "eslint:recommended",
   "parserOptions": {
-    "sourceType": "script",
+    "sourceType": "module",
     "ecmaVersion": 8
   },
-  "plugins": [
-    "cucumber"
-  ],
   "rules": {
     "indent": [
       "error",
@@ -129,12 +126,6 @@
       "error",
       "never"
     ],
-    "cucumber/async-then": 2,
-    "cucumber/expression-type": 0,
-    "cucumber/no-restricted-tags": [
-      2,
-      "prod"
-    ],
     "eol-last": [
       "error"
     ],
@@ -144,8 +135,7 @@
         "max": 1,
         "maxEOF": 1
       }
-    ],
-    "cucumber/no-arrow-functions": 2
+    ]
   },
   "globals": {
     "angular": false,
