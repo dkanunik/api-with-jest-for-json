@@ -1,4 +1,4 @@
-import AppConfig from '../configs/AppConfig.cjs';
+import AppConfig from '../configs/AppConfig';
 
 import axios from 'axios';
 
@@ -9,8 +9,7 @@ class FinanceModel {
         try {
             return await axios.get(AppConfig.baseUrl + params);
         } catch (e) {
-            console.log(`Request [${AppConfig.baseUrl}${params}] returned: `);
-            console.log(e);
+            return e.response;
         }
     }
 }

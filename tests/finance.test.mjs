@@ -1,5 +1,5 @@
-import FinanceModel from '../model/FinanceModel.mjs';
-import JsonBodyParser from "../lib/JsonBodyParser.mjs";
+import FinanceModel from '../model/FinanceModel';
+import JsonBodyParser from "../lib/JsonBodyParser";
 
 describe('As a FinanceModel API user', () => {
     describe('I have to get HTTP response body', () => {
